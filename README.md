@@ -24,6 +24,19 @@ Since the Gemini API doesn't currently allow direct model fine-tuning, we used *
 - **Domains Covered:** Greetings, casual plans, food, help requests, weather updates.
 - **Style:** Natural, short, casual Hinglish (Hindi-English code-switching) to mimic real-world user conversations.
 
+
+- **How the Examples Were Chosen:**
+  - **Domains:** Picked from common everyday situations like greetings, casual plans, food and drink discussions, help requests, and weather updates.
+  - **Style:** 
+    - Casual, friendly, and short-form sentences.
+    - Natural Hinglish code-switching — mixing Hindi and English the way real users speak.
+  - **Length:** 
+    - Short, 1–2 line dialogues to keep the prompts compact.
+    - Long enough to show natural code-switch patterns but short enough for fast inference.
+  - **Reasoning:** 
+    - These types of conversations are very frequent in voice assistants (e.g., casual queries, weather checks, help requests).
+    - Training the model on these examples helps it learn the typical structure and tone needed for Hinglish-speaking users.
+
 ---
 
 ## 🧠 Model Choice
