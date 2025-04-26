@@ -20,7 +20,7 @@ Since the Gemini API doesn't currently allow direct model fine-tuning, we used *
 
 ## 📄 Dataset Selection & Size
 
-- **Size:** 10–20 examples to cover basic conversational domains while keeping it lightweight.
+- **Size:** 20 examples to cover basic conversational domains while keeping it lightweight.
 - **Domains Covered:** Greetings, casual plans, food, help requests, weather updates.
 - **Style:** Natural, short, casual Hinglish (Hindi-English code-switching) to mimic real-world user conversations.
 
@@ -69,7 +69,7 @@ User: Sunday ka kya plan hai?
 
 **Response:**
 ```
-Shayad friends ke saath outing karun, ya thoda rest karun. Tumhara kya plan hai?
+Assistant: Shayad friends ke saath outing karun, ya thoda rest karun. Tumhara kya plan hai?
 ```
 
 ### 2. Prompt
@@ -79,7 +79,7 @@ User: Thoda mausam ka update dedo.
 
 **Response:**
 ```
-Aaj mausam kaafi pleasant hai, halka sa cloudy feel ho raha hai. Perfect chai ke saath enjoy karne ke liye!
+Assistant: Aaj mausam kaafi pleasant hai, halka sa cloudy feel ho raha hai. Perfect chai ke saath enjoy karne ke liye!
 ```
 
 ### 3. Prompt
@@ -89,10 +89,25 @@ User: Dinner ke liye kya suggest karoge?
 
 **Response:**
 ```
-Ek simple dal chawal ya light pasta dinner ke liye perfect rahega. Thoda healthy bhi aur tasty bhi!
+Assistant: Ek simple dal chawal ya light pasta dinner ke liye perfect rahega. Thoda healthy bhi aur tasty bhi!
 ```
 
-## 📊 Evaluation Plan
 
-* **Initial Phase:** Human review for checking fluency, Hinglish naturalness, and tone consistency.
-* **Later Phase:** Basic automated metrics like BLEU/ROUGE to assess Hinglish response quality.
+
+## 📊 How We Would Evaluate Quality in Production
+
+- **Initial Phase:**
+- **Human Review:**
+  - Check if the responses feel natural and fluid.
+  - Confirm that Hinglish code-switching happens appropriately.
+  - Ensure tone matches friendly, casual assistant behavior.
+
+- **Later Phase:**
+- **Automated Evaluation Metrics:**
+  - Monitor user satisfaction feedback (ratings/reviews).
+
+---
+
+✅ This completes the Design Rationale part of the project in a clean and professional format.
+
+
