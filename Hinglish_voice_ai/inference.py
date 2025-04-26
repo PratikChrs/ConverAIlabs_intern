@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 # Load examples from dataset.jsonl
 examples = []
+#We are opening the dataset.jsonl file in read mode and storing the prompt of the dataset prompt on a prompt variable and completion prompt on a completion variable
+#and the appending everything to the formatted way onexamples list.
 with open("dataset.jsonl", "r", encoding="utf-8") as f:
     for line in f:
         data = json.loads(line.strip())
@@ -16,8 +18,9 @@ with open("dataset.jsonl", "r", encoding="utf-8") as f:
         completion = data['completion']
         examples.append(f"{prompt.strip()} {completion.strip()}")
 
-# Build system prompt dynamically
+# We are building system prompt dynamically
 few_shot_examples = "\n\n".join(examples)
+# we are sending our dataset.jsonl on the system_prompt and the gemini model will learn those few-shot examples and generate output accordingly
 system_prompt = f"""You are a friendly Hinglish-speaking AI assistant. Respond casually mixing Hindi and English naturally.
 
 Here are some examples:
