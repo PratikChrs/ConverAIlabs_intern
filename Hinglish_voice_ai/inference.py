@@ -32,10 +32,10 @@ Here are some examples:
 # User query
 user_prompt = input("User: ")
 
-# Load model
+# Load model.gemini-1.5-flash is faster and effective to use
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-# Generate response
+# Generate response.It will combine the prompt and user input and and generate a friendly prompt 
 response = model.generate_content([
     {"role": "user", "parts": [system_prompt]},
     {"role": "user", "parts": [user_prompt]}
