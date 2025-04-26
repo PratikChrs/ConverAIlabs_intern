@@ -1,4 +1,4 @@
-# Hinglish Voice-AI — Mini Fine-Tuning Project
+# Hinglish Assistant
 
 ---
 
