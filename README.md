@@ -5,7 +5,7 @@
 ## 📖 Overview
 
 We built a Voice-AI assistant that understands and responds in Hinglish (Hindi + English mix).  
-Since the Gemini API doesn't currently allow direct model fine-tuning, we used **few-shot prompting** to simulate fine-tuning behavior.
+Since the Gemini API doesn't currently allow direct model fine-tuning, I used **few-shot prompting** to simulate fine-tuning behavior.
 
 ---
 
